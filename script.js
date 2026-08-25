@@ -22,7 +22,47 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// Formulario de contacto -> abre el cliente de mail con todo prellenado
+// Selector de idioma (ES por defecto, EN y PT via translations.js)
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+
+  if (lang !== 'es') {
+    const dict = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+  } else {
+    // Volvemos al español recargando el texto original guardado al cargar la página
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (el.dataset.esOriginal !== undefined) el.textContent = el.dataset.esOriginal;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      if (el.dataset.esOriginalHtml !== undefined) el.innerHTML = el.dataset.esOriginalHtml;
+    });
+  }
+
+  document.querySelectorAll('.lang-switch__btn').forEach(b => {
+    b.classList.toggle('is-active', b.dataset.lang === lang);
+  });
+  try { localStorage.setItem('site-lang', lang); } catch (e) {}
+}
+
+// Guardamos el español original antes de tocar nada
+document.querySelectorAll('[data-i18n]').forEach(el => { el.dataset.esOriginal = el.textContent; });
+document.querySelectorAll('[data-i18n-html]').forEach(el => { el.dataset.esOriginalHtml = el.innerHTML; });
+
+document.querySelectorAll('.lang-switch__btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+});
+
+let savedLang = 'es';
+try { savedLang = localStorage.getItem('site-lang') || 'es'; } catch (e) {}
+applyLanguage(savedLang);
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -31,5 +71,5 @@ form.addEventListener('submit', (e) => {
   const mensaje = form.mensaje.value;
   const asunto = encodeURIComponent(`Consulta desde la web — ${nombre}`);
   const cuerpo = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\n\nMensaje:\n${mensaje}`);
-  window.location.href = `mailto:ventas@agricolasanchez.com.ar?subject=${asunto}&body=${cuerpo}`;
+  window.location.href = `mailto:ventas@agricolasanchez.com.ar,juanmestevez@agricolasanchez.com.ar?subject=${asunto}&body=${cuerpo}`;
 });

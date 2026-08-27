@@ -237,8 +237,8 @@ p{ margin-bottom: 0.9rem; max-width: 62ch; }
 .btn--primary:hover{ background: linear-gradient(135deg, #F2C169, #E4913A); }
 .btn--ghost{ border-color: var(--charcoal); color: var(--charcoal); }
 .btn--ghost-light{ border-color: var(--paper); color: var(--paper); }
-.btn--whatsapp{ background:#2fae60; color:#fff; }
-.btn--whatsapp:hover{ background:#33c26b; }
+.btn--whatsapp{ background:#fff; color:#25D366; border:1px solid #d9e4dc; }
+.btn--whatsapp:hover{ background:#f3fbf6; }
 
 /* ===== Stats ===== */
 .stat-list{ display:grid; grid-template-columns: 1fr 1fr; gap:1.6rem; }
@@ -354,9 +354,9 @@ p{ margin-bottom: 0.9rem; max-width: 62ch; }
 /* ===== Floating WhatsApp ===== */
 .fab-whatsapp{
   position:fixed; bottom:1.5rem; right:1.5rem; z-index:60;
-  background:#2fae60; color:#fff; width:56px; height:56px; border-radius:50%;
+  background:#fff; color:#25D366; width:58px; height:58px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  box-shadow:0 4px 14px rgba(0,0,0,0.3);
+  box-shadow:0 4px 14px rgba(0,0,0,0.25);
   transition: transform 0.15s ease;
 }
 .fab-whatsapp:hover{ transform: scale(1.06); }

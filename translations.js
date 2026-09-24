@@ -10,7 +10,7 @@ const translations = {
     nav_contacto: "Contact",
 
     hero_eyebrow: "Santa Lucía · San Juan · Argentina",
-    hero_title: "Thirty years<br><em>under the same sun.</em>",
+    hero_title: "Fifty years<br><em>under the same sun.</em>",
     btn_consulta: "Make an inquiry",
     btn_ver_productos: "View products",
 
@@ -53,7 +53,7 @@ const translations = {
     paso6_h: "Export",
     paso6_p: "Shipped to markets across the Americas, Europe and Asia under international standards.",
 
-    feature_caption: "Every handful passes through hands that have known this craft for thirty years.",
+    feature_caption: "Every handful passes through hands that have known this craft for fifty years.",
 
     eyebrow_03: "03 · Products",
     productos_title: "Our raisins.",
@@ -100,7 +100,7 @@ const translations = {
     nav_contacto: "Contato",
 
     hero_eyebrow: "Santa Lucía · San Juan · Argentina",
-    hero_title: "Trinta anos<br><em>sob o mesmo sol.</em>",
+    hero_title: "Cinquenta anos<br><em>sob o mesmo sol.</em>",
     btn_consulta: "Fazer uma consulta",
     btn_ver_productos: "Ver produtos",
 
@@ -143,7 +143,7 @@ const translations = {
     paso6_h: "Exportação",
     paso6_p: "Despachado para mercados da América, Europa e Ásia sob normas internacionais.",
 
-    feature_caption: "Cada punhado passa por mãos que conhecem este ofício há trinta anos.",
+    feature_caption: "Cada punhado passa por mãos que conhecem este ofício há cinquenta anos.",
 
     eyebrow_03: "03 · Produtos",
     productos_title: "Nossas passas de uva.",

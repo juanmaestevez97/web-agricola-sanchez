@@ -16,7 +16,7 @@ const translations = {
 
     eyebrow_01: "01 · About us",
     nosotros_title: "Family, land and craft.",
-    nosotros_p1: "We are a family business with over 30 years of experience, dedicated to the production and export of seedless raisins. Our commitment to quality and food safety across the entire production chain is the main purpose of the Agrícola Comercial Sánchez Sánchez team.",
+    nosotros_p1: "We are a family business with over 50 years of experience, dedicated to the production and export of seedless raisins. Our commitment to quality and food safety across the entire production chain is the main purpose of the Agrícola Comercial Sánchez Sánchez team.",
     nosotros_p2: "We are located in the Santa Lucía department, province of San Juan, in the heart of the Tulum valley — home to 97% of the province's population. It's an arid territory with a desert climate and wide temperature swings: between 40° and 45°C in summer, and between 2° and 6°C in winter. Water flowing down from the melting snow of the Andes is the resource that makes everything we do possible.",
     nosotros_p3: "These environmental conditions are ideal for growing grapevines and for their natural sun-drying, on land specially prepared to obtain excellent-quality raisins.",
 
@@ -106,7 +106,7 @@ const translations = {
 
     eyebrow_01: "01 · Sobre nós",
     nosotros_title: "Família, terra e ofício.",
-    nosotros_p1: "Somos uma empresa familiar com mais de 30 anos de trajetória, dedicada à produção e exportação de passas de uva sem semente. Nosso compromisso com a qualidade e a segurança alimentar em toda a cadeia produtiva é o principal propósito da equipe da Agrícola Comercial Sánchez Sánchez.",
+    nosotros_p1: "Somos uma empresa familiar com mais de 50 anos de trajetória, dedicada à produção e exportação de passas de uva sem semente. Nosso compromisso com a qualidade e a segurança alimentar em toda a cadeia produtiva é o principal propósito da equipe da Agrícola Comercial Sánchez Sánchez.",
     nosotros_p2: "Estamos localizados no departamento de Santa Lucía, província de San Juan, no coração do vale de Tulum — onde vive 97% da população provincial. Um território árido, de clima desértico e grandes amplitudes térmicas: entre 40° e 45°C no verão, e entre 2° e 6°C no inverno. A água que desce do degelo da Cordilheira dos Andes é o recurso que torna possível tudo o que fazemos.",
     nosotros_p3: "Essas condições ambientais são ideais para o cultivo da videira e sua desidratação natural ao sol, em terrenos preparados para obter passas de uva de excelente qualidade.",
 
